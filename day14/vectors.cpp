@@ -11,7 +11,7 @@ void explainVector(){
     vec.push_back({2,3}); //this needs curly brackets
     vec.emplace_back(4,5);//this doesnt need curly brackets
 
-    vector <int> v1(5,100);{100,100,100,100,100}
+    vector <int> v1(5,100);//{100,100,100,100,100}
     cout<<v1[0];
 
     vector <int> v2(5); //{0,0,0,0,0}
@@ -20,7 +20,7 @@ void explainVector(){
     it++;
 
     cout<<*(it)<<" ";
-    
+
 }
 
 int main(){
