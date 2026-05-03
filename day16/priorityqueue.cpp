@@ -1,20 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-void explainQueue(){
-    queue<int> q;
-    q.push(1);
-    q.push(2);
-    q.emplace(4);
+void explainPriorityQueue(){
+    priority_queue<int> pq;// makes max heap
+    pq.push(1);
+    pq.push(2);
+    pq.emplace(4);
 
-    q.back()+=5;
-    cout<<q.back()<<" ";
-    cout<<q.front()<<" ";
-    q.pop();//pops 1
-    cout<<q.front();
+    cout<<pq.top();
+    pq.pop();//pops 1
+
+    priority_queue<int, vector<int> , greater<int>> pq2;// it makes Min heap
+    pq2.push(1);
+    pq2.push(2);
+    pq2.emplace(4);
+
+    cout<<pq2.top();
+
 }
 
 int main(){
-    explainQueue();
+    explainPriorityQueue();
     return 0;
 }
