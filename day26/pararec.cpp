@@ -2,7 +2,7 @@
 using namespace std;
 
 void sum(int i, int s) {
-    if(i < 1) {
+    if(i == 0) {
         cout<< s;
         return;
     }
