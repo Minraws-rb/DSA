@@ -18,14 +18,11 @@ public:
 
 int main() {
     Solution obj;
-
     vector<int> nums = {3, 4, 5, 1, 2};
-
     if(obj.check(nums)) {
         cout << "True";
     } else {
         cout << "False";
     }
-
     return 0;
 }
